@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Recurssive vs Iterative
+    </title>
+    </head>
+    <body>
+        <p>Finding the factorial of a number using <em>recurssive and iterative</em></p>
+        <p><b>Recursive</b> when an entity calls itself (Function calls itself.)</p>
+        <p><b>Iterative</b>  when there is a loop (or repetition).(A set of instructions repeatedly executed.)</p>
+        <a href="https://www.geeksforgeeks.org/difference-between-recursion-and-iteration/">For more info click here</a>
+        <p>note: check console for script output</p>
+        <script>
+            var n=5;
+            function recurssiveFact(n){
+                if(n===0){
+                    return 1;
+                }else{
+                    return n * recurssiveFact(n-1);
+                }
+                
+            }
+            
+            function iterativeFact(n){
+                var fact=1;
+                for(var i=2; i<=n; i++){
+                    fact = fact*i;
+                   
+                } return fact;
+            }
+            console.log("recurssiveFact:"+recurssiveFact(n)+"  "+"iterativeFact:"+iterativeFact(n));
+        </script>
+    </body>
+</html>
